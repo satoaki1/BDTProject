@@ -37,4 +37,3 @@ predictions = model.predict_on_batch(x)
 
 for i in range(5):
     print(x[i].tolist(), "predicts", predictions[i], "ACTUAL", y[i])
-
