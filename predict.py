@@ -3,18 +3,8 @@ from numpy import loadtxt
 from keras.models import Sequential
 from keras.layers import Dense
 
-# import .csv input into Pandas DataFrame
-our_data = pd.read_csv("Kuala_Lumpur_house_prices.csv")
-
-our_data['current_price'] = our_data['current_price'].str.replace(',', '').astype(float)
-pd.options.display.float_format = '{:.2f}'.format
-
-# drops the null values in the dataset, save them to new .csv file
-our_data = our_data.dropna()
-our_data.to_csv("Kuala_Lumpur_house_prices_clean.csv", index=False)
-
 # load the dataset
-myData = loadtxt("Kuala_Lumpur_house_prices_clean.csv", delimiter=",", skiprows=1, usecols=(1, 2, 3, 4, 5, 6))
+myData = loadtxt("Kuala_Lumpur_house_prices_clean.csv", delimiter=",", skiprows=1, usecols=(0, 1, 2, 3, 4, 5))
 x = myData[:, 0:5]
 y = myData[:, 5]
 
