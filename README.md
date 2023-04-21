@@ -1,6 +1,11 @@
 # Data science with Python3 and its libraries
-This project is assessed during the Big Data Technology module in Taylor's University in Malaysia. With using python, we have prepared a dirty, raw unstructured data which is not cleaned yet, cleaned the data and customized to the structured data and created a prediction model due to the structured data.
 
+## Introduction
+This project is assessed during the Big Data Technology module in Taylor's University in Malaysia. With using python, we have prepared a dirty, raw unstructured data which is not cleaned yet, cleaned the data and customized to the structured data and created a prediction model due to the structured data.
+</br>
+</br>
+
+## Functions
 Below are the Python libraries we have applied for this project:
 
 * **Pandas**
